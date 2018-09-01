@@ -1,0 +1,160 @@
+*{
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+/*header*/
+.header-left p{
+  margin: 0 auto;
+  float: left;
+  line-height: 40px;
+}
+.contribute{
+  margin: 0 auto;
+  float: right;
+  line-height: 40px;
+  background-color: rgba(255,255,255,0.3);
+  transition: all 0.5s;
+}
+.header-right:hover {
+  background-color: rgba(255,255,255,0.5);
+}
+header {
+  height: 40px;
+  background-color: #26d0c9;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/*modal*/
+.login-modal-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  /* display: none;を追加してください */
+  display: none;
+}
+.modal {
+  position: absolute;
+  top: 0;
+  background-color: #e6ecf0;
+  padding: 20px 0;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+#submit-btn {
+  display: inline-block;
+  padding: 14px 140px;
+  background-color: #5dca88;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
+}
+/*footer*/
+footer .btn{
+  float: left;
+  width:25%;
+}
+footer a{
+  text-align: center;
+  line-height: 40px;
+  display: block;
+}
+
+footer {
+  background-color: #26d0c9;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+
+
+/* <profile.html> */
+.change {
+  float: right;
+}
+.introduction{
+  padding-top: 40px;
+}
+.introduction img {
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+}
+.file p{
+  border: solid 1px #000000;
+  text-align: center;
+  float: left;
+  width: 25%;
+}
+
+/*ホーム*/
+.home-main {
+  padding-top: 40px;
+}
+
+.timeline-box {
+  background-color: red;
+  width: 100%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: none;
+}
+
+
+.timeline-box img{
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+  padding: 4px;
+  float: left;
+}
+
+.timeline-content {
+  background-color: blue;
+  width: 100%;
+}
+.user-name{
+  font-size: 13px;
+  display: inline-block;
+  width: calc(100% - 40px);
+}
+.timeline-text {
+  display: inline-block;
+  width: calc(100% - 40px);
+  float: left;
+
+}
+.timeline-responce .responce-box {
+  font-size: 10px;
+  text-align: center;
+  float: left;
+  width: 25%;
+  margin-bottom: 0;
+}
+
+.timeline-responce {
+  display: inline-block;
+  width: calc(100% - 40px);
+}
+
+.edit-delete div {
+  display: inline-block;
+}
+.responce-box div {
+  display: inline-block;
+  padding-top: 4px;
+  padding-bottom: 0;
+  padding-left: 2px;
+  padding-right: 2px;
+}
