@@ -34,12 +34,8 @@ $(".submit-btn").click( function(){
          '<div class="timeline-text" id="content">'+text+'</div>'+
          '<div class="timeline-responce">'+
           '<div class="responce-box">'+
-           '<div class="comment">コメント</div>'+
-           '<div id="comments">0</div>'+
-          '</div>'+
-          '<div class="responce-box">'+
            '<div class="empathy">共感</div>'+
-           '<div class="empathies">0</div>'+
+           '<div id="empathies">0</div>'+
           '</div>'+
           '<div class="responce-box">'+
            '<div class="">うらやみ</div>'+
@@ -59,9 +55,9 @@ $(".submit-btn").click( function(){
 
 /*コメント投稿画面*/
 var count = 0;
-$('.comment').click(function(){
+$('.empathy').click(function(){
   count ++;
-  $('#comments').html('<div id="comments">'+count+'</div>');
+  $('#empathies').html('<div id="empathies">'+count+'</div>');
 });
 
 /*footer*/
@@ -69,3 +65,4 @@ $('.home-btn').click( function(){
   $('.home-btn').css('border-bottom','solid 1px purple');
 });
 });
+$(() => refreshPosts())
