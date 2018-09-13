@@ -16,6 +16,7 @@ a {
   line-height: 40px;
   background-color: rgba(255,255,255,0.3);
   transition: all 0.5s;
+  cursor: pointer;
 }
 .header-right:hover {
   background-color: rgba(255,255,255,0.5);
@@ -157,4 +158,8 @@ footer {
   padding-bottom: 0;
   padding-left: 2px;
   padding-right: 2px;
+}
+
+.empathy, .envy, .editing, .delating {
+  cursor: pointer;
 }
