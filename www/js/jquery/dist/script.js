@@ -21,13 +21,21 @@ $(function () {
         }
     });
 
-    /*コメント投稿画面*/
-    var count = 0;
-    $('.empathy').click(function () {
-        count++;
-        $('#empathies').html('<div id="empathies">' + count + '</div>');
+    /*共感*/
+    var empathyCount = 0;
+    $(document).on('click','.empathy',function(){
+        empathyCount++;
+        $('#empathies').text(empathyCount);
+        console.log('empathyCount')
     });
 
+   /*うらやみ*/
+   var envyCount = 0;
+   $(document).on('click','.envy',function(){
+       envyCount++;
+       $('#envies').text(envyCount);
+       console.log('envyCount')
+   });
     /*footer*/
     $('.home-btn').click(function () {
         $('.home-btn').css('border-bottom', 'solid 1px purple');
