@@ -35,12 +35,12 @@ if (('localStorage' in window) && (window.localStorage !== null)) {
                 '<div id="empathies">0</div>' +
                 '</div>' +
                 '<div class="responce-box">' +
-                '<div class="">うらやみ</div>' +
-                '<div class="">0</div>' +
+                '<div class="envy">うらやみ</div>' +
+                '<div id="envies">0</div>' +
                 '</div>' +
                 '<div class="responce-box">' +
-                '<div class="envy">編集</div>' +
-                '<div class="envies">削除</div>' +
+                '<div class="editing">編集</div>' +
+                '<div class="delating">削除</div>' +
                 '</div>' +
                 '</div>' +
                 '</div>' +
