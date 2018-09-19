@@ -43,3 +43,8 @@ $(function () {
 });
 
 $(() => refreshPosts());
+
+  /*投稿削除*/
+  $(document).on('click','.delating',function(){
+
+  })
