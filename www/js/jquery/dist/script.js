@@ -6,6 +6,9 @@ $(function () {
     $('.close-btn').click(function () {
         $('#login-modal').fadeOut();
     });
+    $('.submit-btn').click(function () {
+        $('#login-modal').fadeOut();
+    });
 
     /*投稿*/
     $("textarea").keyup(function () {
@@ -44,7 +47,4 @@ $(function () {
 
 $(() => refreshPosts());
 
-  /*投稿削除*/
-  $(document).on('click','.delating',function(){
-
-  })
+  
