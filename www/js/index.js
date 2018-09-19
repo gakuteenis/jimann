@@ -1,3 +1,10 @@
+//乱数を作成する関数
+function creatCode(){
+var newCode = Math.floor(Math.random() * (1000000 - 1 + 1)) + 1;
+newCode = ( '0000000' + newCode ).slice( -6);//0埋め
+  return newCode;
+}
+
 if (('localStorage' in window) && (window.localStorage !== null)) {
     // ローカルストレージが使える
     function getPosts() {
@@ -10,6 +17,7 @@ if (('localStorage' in window) && (window.localStorage !== null)) {
     $(".submit-btn").click(() => {
         var post = {
             text: $('.contribution-text').val(),
+            newCode : creatCode
             // userName: ユーザ名 など必要であれば保存する
         }; // 新しい投稿
         var posts = getPosts();
@@ -40,7 +48,7 @@ if (('localStorage' in window) && (window.localStorage !== null)) {
                 '</div>' +
                 '<div class="responce-box">' +
                 '<div class="editing">編集</div>' +
-                '<div class="delating">削除</div>' +
+                '<div class="delating" type="button">削除</div>' +
                 '</div>' +
                 '</div>' +
                 '</div>' +
@@ -49,6 +57,18 @@ if (('localStorage' in window) && (window.localStorage !== null)) {
         });
         $('.timeline-box').show();
     }
+
+    $('.delating').click(() => {
+      var posts = getPosts();
+      const deleteCode = 'newCode'
+      const result = []
+      for(let post of getPosts()) {
+        if (post.newCode !== deleteCode) result.push(result);
+      }
+      localStorage.setItem('posts', JSON.stringify(posts));
+      refreshPosts()
+    });
+
 } else {
     // 使えない。。。
     alert('No');
