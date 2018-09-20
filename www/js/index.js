@@ -48,7 +48,7 @@ if (('localStorage' in window) && (window.localStorage !== null)) {
                 '</div>' +
                 '<div class="responce-box">' +
                 '<div class="editing">編集</div>' +
-                '<div class="delating" type="button">削除</div>' +
+                '<div class="delating" date-number="delatings">削除</div>' +
                 '</div>' +
                 '</div>' +
                 '</div>' +
@@ -58,16 +58,16 @@ if (('localStorage' in window) && (window.localStorage !== null)) {
         $('.timeline-box').show();
     }
 
-    $('.delating').click(() => {
+    function delatings(newCode) {
       var posts = getPosts();
-      const deleteCode = 'newCode'
+      const deleteCode = newCode
       const result = []
       for(let post of getPosts()) {
         if (post.newCode !== deleteCode) result.push(result);
       }
       localStorage.setItem('posts', JSON.stringify(posts));
       refreshPosts()
-    });
+    };
 
 } else {
     // 使えない。。。
