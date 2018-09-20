@@ -47,4 +47,7 @@ $(function () {
 
 $(() => refreshPosts());
 
+$(document).on('click','.delating'function(){
+
+})
   
